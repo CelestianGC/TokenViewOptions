@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.0" >
+
+	<properties>
+		<name>CoreRPG - Token View Options</name>
+		<version>1.0</version>
+		<loadorder>99</loadorder>
+		<description>
+			<text>Configure view options for DM/PC views of NPC HP/Effects</text>
+			<website></website>
+			<author>Celestian</author>
+		</description>
+	</properties>
+
+	<announcement text="Token View Options - CoreRPG v1.0.\rby Celestian" font="emotefont"/>
+
+	<base>		
+    <!-- TokenViewOptions -->
+    <!-- Scripts -->
+    <script name="OptionsADND" file="scripts/data_options_adnd.lua" />
+    <!-- Override CoreRPG's "TokenManager" We do this because I have special flags to show bars/effects 
+       to DM only and players only. Not just "on for all, or off for all" but othwise the same -->
+    <script name="TokenManager" file="scripts/manager_token_CoreRPG.3.3.6.lua" />
+    <!-- Includes  -->
+    <!-- Strings -->
+    <string name="option_label_DM_SHOW_NPC_EFFECTS">Token: DM:Show N/PC effects</string>
+    <string name="option_label_DM_SHOW_NPC_HEALTHBAR">Token: DM:Show N/PC health</string>
+    <string name="option_label_TNPCE">Token: PC:Show Enemy effects</string>
+    <string name="option_label_TNPCH">Token: PC:Show Enemy health</string>
+    <string name="option_label_TPCE">Token: PC:Show Ally effects</string>
+    <string name="option_label_TPCH">Token: PC:Show Ally health</string>
+  </base>
+</root>

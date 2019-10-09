@@ -8,6 +8,7 @@ function onInit()
   -- if this is updated, let the token manager know
   DB.addHandler("options.DM_SHOW_NPC_EFFECTS", "onUpdate", TokenManager.onOptionChanged);
   DB.addHandler("options.DM_SHOW_NPC_HEALTHBAR", "onUpdate", TokenManager.onOptionChanged);
+  
 end
 
 function registerOptions()
